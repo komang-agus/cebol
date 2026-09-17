@@ -1,0 +1,32 @@
+{
+  "name": "cebol-blind-box",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "dev:tailscale": "vite --host 100.107.49.101 --port 4173 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ignore-pattern dist",
+    "test": "npm run build"
+  },
+  "dependencies": {
+    "lucide-react": "^1.33.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "@vitejs/plugin-react": "6.0.2",
+    "eslint": "9.39.4",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "16.4.0",
+    "vite": "8.0.13"
+  }
+}
