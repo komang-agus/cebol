@@ -1,6 +1,5 @@
 const supportedIcons = new Set([
   "arrow-up",
-  "arrow-up-right",
   "collection",
   "plus",
   "spark",

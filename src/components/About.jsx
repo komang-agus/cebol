@@ -1,4 +1,3 @@
-import { LockKeyhole } from "lucide-react";
 import { siteConfig } from "../config/siteConfig";
 
 export function About({ t, language }) {
@@ -59,58 +58,6 @@ export function About({ t, language }) {
                 <span>{fact.label}</span>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="pack-explainer" aria-labelledby="pack-explainer-title">
-        <div className="pack-explainer-shell">
-          <div className="pack-explainer-copy reveal">
-            <p className="section-label section-label-light">{t.pack.label}</p>
-            <h2 id="pack-explainer-title">{t.pack.title}</h2>
-            <p>{t.pack.body}</p>
-            <p className="pack-secret-note">
-              <LockKeyhole className="pack-lock" aria-hidden="true" strokeWidth={2.2} />
-              {t.pack.secretNote}
-            </p>
-          </div>
-
-          <div className="pack-scenarios">
-            <article className="pack-scenario reveal">
-              <div className="pack-scenario-heading">
-                <span>{t.pack.scenarioLabel} 01</span>
-                <h3>{t.pack.regularTitle}</h3>
-                <strong>{t.pack.regularBadge}</strong>
-              </div>
-              <div className="pack-slots" aria-hidden="true">
-                {[1, 2, 3, 4].map((number) => (
-                  <span className="pack-slot" key={number}>
-                    <span className="pack-figure" />
-                    <small>{String(number).padStart(2, "0")}</small>
-                  </span>
-                ))}
-              </div>
-            </article>
-
-            <article className="pack-scenario pack-scenario-secret reveal">
-              <div className="pack-scenario-heading">
-                <span>{t.pack.scenarioLabel} 02</span>
-                <h3>{t.pack.secretTitle}</h3>
-                <strong>{t.pack.secretBadge}</strong>
-              </div>
-              <div className="pack-slots" aria-hidden="true">
-                {[1, 2, 3].map((number) => (
-                  <span className="pack-slot" key={number}>
-                    <span className="pack-figure" />
-                    <small>{String(number).padStart(2, "0")}</small>
-                  </span>
-                ))}
-                <span className="pack-slot is-secret">
-                  <LockKeyhole className="pack-lock" strokeWidth={2.2} />
-                  <small>{t.pack.secretSlot}</small>
-                </span>
-              </div>
-            </article>
           </div>
         </div>
       </section>

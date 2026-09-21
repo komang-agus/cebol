@@ -128,7 +128,7 @@ export const content = {
           title: "Satuan",
           text: "Satu blind box dengan satu karakter acak.",
           badge: "1 karakter acak",
-          price: "Estimasi Rp20.000",
+          price: "Estimasi Rp25.000",
         },
         pack: {
           title: "Paket isi 4",
@@ -155,7 +155,7 @@ export const content = {
         { q: "Apakah pembeli dapat memilih karakter?", a: "Tidak. Karakter tetap menjadi kejutan sampai kotaknya dibuka." },
         { q: "Apakah mungkin mendapat karakter yang sama?", a: "Duplikat dapat terjadi jika membeli beberapa box satuan. Dalam satu paket isi 4, pembeli dijamin mendapat empat karakter berbeda." },
         { q: "Bagaimana isi paket jika mendapat secret?", a: "Paket tersebut berisi tiga karakter reguler berbeda dan satu secret. Secret menggantikan salah satu dari empat reguler." },
-        { q: "Berapa harga produknya?", a: "Estimasi harganya Rp20.000 per blind box. Harga final akan dikonfirmasi sebelum peluncuran." },
+        { q: "Berapa harga produknya?", a: "Estimasi harganya Rp25.000 per blind box. Harga final akan dikonfirmasi sebelum peluncuran." },
         { q: "Kapan produk mulai tersedia?", a: "ceBol direncanakan hadir pada September 2026. Tanggal pastinya belum ditentukan." },
         { q: "Bagaimana cara memesan?", a: "Pemesanan dilakukan langsung melalui WhatsApp penjual setelah tombol kontak tersedia." },
       ],

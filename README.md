@@ -21,6 +21,23 @@ npm run build
 
 Hasil build berada di folder `dist`.
 
+## Video marketing Remotion
+
+Komposisi video vertikal 1080×1920 berada di folder `remotion/`. Video memakai
+aset produk publik di `public/assets/` dan tidak menampilkan identitas karakter
+secret.
+
+```bash
+npm run video:audio
+npm run video:studio
+npm run video:render
+```
+
+Hasil render utama berada di
+`renders/cebol-launch-vertical.mp4`. Audio dibuat secara lokal melalui
+`remotion/scripts/generate-audio.mjs`, sehingga tidak bergantung pada aset musik
+pihak ketiga.
+
 ## Mengganti nomor WhatsApp
 
 Buka `src/config/siteConfig.js`, lalu isi `whatsappNumber` menggunakan kode

@@ -20,7 +20,7 @@ export default defineConfig([
   reactHooks.configs.flat["recommended-latest"],
   jsxA11y.flatConfigs.recommended,
   {
-    files: ["**/*.{js,jsx}"],
+    files: ["**/*.{js,jsx,mjs}"],
     languageOptions: {
       ecmaVersion: "latest",
       sourceType: "module",

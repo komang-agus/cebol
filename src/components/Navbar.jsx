@@ -1,5 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Icon } from "./Icon";
 
 const links = [
   ["home", "#beranda"],
@@ -92,7 +92,7 @@ export function Navbar({ t, language, onLanguageChange, whatsappUrl }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                {t.nav.whatsapp}<Icon name="arrow-up-right" />
+                {t.nav.whatsapp}<ArrowUpRight aria-hidden="true" strokeWidth={2.2} />
               </a>
             )}
           </div>

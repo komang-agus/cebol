@@ -11,6 +11,10 @@
     "dev:tailscale": "vite --host 100.107.49.101 --port 4173 --strictPort",
     "build": "vite build",
     "preview": "vite preview",
+    "video:audio": "node remotion/scripts/generate-audio.mjs",
+    "video:studio": "remotion studio remotion/index.jsx --no-open",
+    "video:still": "remotion still remotion/index.jsx CeBolLaunchVertical renders/cebol-launch-poster.png --frame=520",
+    "video:render": "remotion render remotion/index.jsx CeBolLaunchVertical renders/cebol-launch-vertical.mp4",
     "lint": "eslint . --ignore-pattern dist",
     "test": "npm run build"
   },
@@ -20,6 +24,9 @@
     "react-dom": "19.2.6"
   },
   "devDependencies": {
+    "@remotion/cli": "4.0.506",
+    "@remotion/media": "4.0.506",
+    "@remotion/transitions": "4.0.506",
     "@eslint/js": "9.39.4",
     "@vitejs/plugin-react": "6.0.2",
     "eslint": "9.39.4",
@@ -27,6 +34,7 @@
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "7.1.1",
     "globals": "16.4.0",
+    "remotion": "4.0.506",
     "vite": "8.0.13"
   }
 }

@@ -1,5 +1,4 @@
-import { ArrowUp } from "lucide-react";
-import { Icon } from "./Icon";
+import { ArrowUp, ArrowUpRight } from "lucide-react";
 
 export function Footer({ t, language, onLanguageChange, whatsappUrl, socialLinks }) {
   return (
@@ -24,9 +23,9 @@ export function Footer({ t, language, onLanguageChange, whatsappUrl, socialLinks
         </div>
 
         <div className="footer-links">
-          {whatsappUrl && <a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp <Icon name="arrow-up-right" /></a>}
-          {socialLinks.instagram && <a href={socialLinks.instagram} target="_blank" rel="noreferrer">Instagram <Icon name="arrow-up-right" /></a>}
-          {socialLinks.tiktok && <a href={socialLinks.tiktok} target="_blank" rel="noreferrer">TikTok <Icon name="arrow-up-right" /></a>}
+          {whatsappUrl && <a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp <ArrowUpRight aria-hidden="true" strokeWidth={2.2} /></a>}
+          {socialLinks.instagram && <a href={socialLinks.instagram} target="_blank" rel="noreferrer">Instagram <ArrowUpRight aria-hidden="true" strokeWidth={2.2} /></a>}
+          {socialLinks.tiktok && <a href={socialLinks.tiktok} target="_blank" rel="noreferrer">TikTok <ArrowUpRight aria-hidden="true" strokeWidth={2.2} /></a>}
           <div className="footer-language" aria-label={t.nav.language}>
             <button className={language === "id" ? "is-active" : ""} onClick={() => onLanguageChange("id")} type="button">ID</button>
             <span>/</span>

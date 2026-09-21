@@ -38,3 +38,11 @@ yarn-error.log*
 /.wrangler/
 /outputs/
 /work/
+
+# Local project handover documents
+/PROMPT_PROJECT_BARU_CEBOL.md
+/RANGKUMAN_PROJECT_CEBOL.md
+
+# Generated media (rebuild from the editable Remotion source)
+/public/audio/
+/renders/

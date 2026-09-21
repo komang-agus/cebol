@@ -1,7 +1,6 @@
-import { Box, Boxes, Check } from "lucide-react";
+import { ArrowUpRight, Box, Boxes, Check } from "lucide-react";
 import { useState } from "react";
 import { createWhatsAppUrl, siteConfig } from "../config/siteConfig";
-import { Icon } from "./Icon";
 
 export function OrderSection({ t, language }) {
   const [selectedProduct, setSelectedProduct] = useState("single");
@@ -27,7 +26,9 @@ export function OrderSection({ t, language }) {
           <p className="section-label">{t.order.label}</p>
           <h2>{t.order.title}</h2>
           <p>{t.order.body}</p>
+        </div>
 
+        <div className="order-purchase-panel reveal">
           <div className="order-product-picker">
             <p>{t.order.selectionLabel}</p>
             <div className="order-product-options">
@@ -65,7 +66,7 @@ export function OrderSection({ t, language }) {
               target="_blank"
               rel="noreferrer"
             >
-              {t.order.cta}<Icon name="arrow-up-right" />
+              {t.order.cta}<ArrowUpRight aria-hidden="true" strokeWidth={2.2} />
             </a>
           ) : (
             <p className="contact-unavailable">{t.order.unavailable}</p>

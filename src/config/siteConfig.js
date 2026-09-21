@@ -1,10 +1,10 @@
 export const siteConfig = {
   // Isi dengan format kode negara tanpa tanda +, contoh: "6281234567890".
   // Semua tombol WhatsApp otomatis disembunyikan selama nilai ini kosong.
-  whatsappNumber: "",
+  whatsappNumber: "6282145045082",
   price: {
-    id: "Rp20.000",
-    en: "IDR 20K",
+    id: "Rp25.000",
+    en: "IDR 25K",
   },
   launchPeriod: {
     id: "September 2026",

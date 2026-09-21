@@ -1,4 +1,4 @@
-import { Box, Boxes } from "lucide-react";
+import { ArrowUpRight, Box, Boxes } from "lucide-react";
 import { siteConfig } from "../config/siteConfig";
 import { Icon } from "./Icon";
 
@@ -56,7 +56,7 @@ export function Hero({ t, language, whatsappUrl }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                {t.nav.whatsapp}<Icon name="arrow-up-right" />
+                {t.nav.whatsapp}<ArrowUpRight aria-hidden="true" strokeWidth={2.2} />
               </a>
             </div>
           )}
