@@ -75,7 +75,7 @@ export function OrderSection({ t, language }) {
 
         <ol className="order-steps">
           {t.order.steps.map((step, index) => (
-            <li className="reveal" key={step.title}>
+            <li className="reveal" key={`order-step-${index}`}>
               <span>{String(index + 1).padStart(2, "0")}</span>
               <div>
                 <h3>{step.title}</h3>

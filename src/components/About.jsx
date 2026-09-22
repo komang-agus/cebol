@@ -52,8 +52,8 @@ export function About({ t, language }) {
           </div>
 
           <div className="fact-grid">
-            {t.inside.facts.map((fact) => (
-              <article className="fact-card reveal" key={fact.label}>
+            {t.inside.facts.map((fact, index) => (
+              <article className="fact-card reveal" key={`fact-${index}`}>
                 <strong>{fact.value}</strong>
                 <span>{fact.label}</span>
               </article>

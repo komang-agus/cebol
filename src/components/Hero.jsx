@@ -88,8 +88,8 @@ export function Hero({ t, language, whatsappUrl }) {
               aria-hidden={copyIndex === 1 ? "true" : undefined}
               key={copyIndex}
             >
-              {t.marquee.map((item) => (
-                <span key={`${copyIndex}-${item}`}>{item}<Icon name="spark" /></span>
+              {t.marquee.map((item, itemIndex) => (
+                <span key={`${copyIndex}-${itemIndex}`}>{item}<Icon name="spark" /></span>
               ))}
             </div>
           ))}

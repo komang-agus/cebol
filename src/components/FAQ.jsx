@@ -10,7 +10,7 @@ export function FAQ({ t }) {
 
       <div className="faq-list">
         {t.faq.items.map((item, index) => (
-          <details key={item.q}>
+          <details key={`faq-${index}`}>
             <summary>
               <span className="faq-number">{String(index + 1).padStart(2, "0")}</span>
               {item.q}
